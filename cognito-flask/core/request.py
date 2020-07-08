@@ -51,7 +51,7 @@ class CognitoPoolRequest(object):
         self.confirmation_code = confirmation_code
         self.tmp_password = tmp_password
 
-    def generate_secreate_hash(self, app_client_id, app_client_secret_id):
+    def generate_secret_hash(self, app_client_id, app_client_secret_id):
         """
         Generates a secret hash requried for the AWS Cognito IDP API endpoints, constucted
         using the username associated with this request object.
